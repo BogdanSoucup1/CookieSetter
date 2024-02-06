@@ -2,7 +2,7 @@ function setCookie(name, value, daysToExpire) {
   var expirationDate = new Date();
   expirationDate.setDate(expirationDate.getDate() + daysToExpire);
 
-  var cookieString = name + '=' + encodeURIComponent(value) + '; expires=' + expirationDate.toUTCString() + '; SameSite=None';
+  var cookieString = name + '=' + encodeURIComponent(value) + '; expires=' + expirationDate.toUTCString() + '; SameSite=None; domain=www.penis.com';
 
   document.cookie = cookieString;
 }
