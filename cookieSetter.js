@@ -2,7 +2,7 @@ function setCookie(name, value, daysToExpire) {
   var expirationDate = new Date();
   expirationDate.setDate(expirationDate.getDate() + daysToExpire);
 
-  var cookieString = name + '=' + encodeURIComponent(value) + '; expires=' + expirationDate.toUTCString() + '; samesite=none;';
+  var cookieString = name + '=' + encodeURIComponent(value) + '; expires=' + expirationDate.toUTCString() + '; samesite=none; domain=bogdansoucup1.github.io;';
 
   document.cookie = cookieString;
 }
